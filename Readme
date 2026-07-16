@@ -1,0 +1,16 @@
+# جمر (Jamr) — Restaurant Landing Page
+
+A fully RTL Arabic landing page for a fictional charcoal-grill restaurant concept.
+
+## Features
+- Full RTL layout with logical CSS properties
+- Arabic typography (Cairo / Lalezar)
+- Full-bleed responsive hero section
+- Menu section with pricing cards (Eastern Arabic numerals)
+- Fully responsive: mobile, tablet, and desktop
+
+## Stack
+HTML5 · Tailwind CSS
+
+## Live demo
+[link]

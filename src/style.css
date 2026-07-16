@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200..1000&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Lalezar&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth !important;
+  }
+}
+
+@theme {
+  --font-cairo: "Cairo", sans-serif;
+  --font-lalezar: "Lalezar", sans-serif;
+  --font-amiri: "Amiri", serif;
+  --color-body: #141110;
+  --color-cards: #1F1B19;
+  --color-highlight: #E85D2C;
+  --color-headers: #C9A15A;
+  --color-text-primary : #F5EFE8;
+  --color-text-secondary: #A8A19A ;
+}
