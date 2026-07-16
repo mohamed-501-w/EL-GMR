@@ -1,103 +1,121 @@
 <!doctype html>
 <html lang="ar" dir="rtl" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>el-gmr</title>
-  </head>
-  <body class="scroll-smooth font-cairo bg-cards  text-text-primary selection:bg-highlight selection:text-white">
-    
-    <header class="fixed top-0 left-0 right-0 z-50 bg-cards/50 backdrop-blur-md border-b  border-white/5 ">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>el-gmr</title>
+</head>
 
-      <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <div class="text-headers font-lalezar text-4xl  tracking-wide"><a href="/index.html">جمر </a></div>
-        <nav class="hidden md:flex items-center gap-8 text-base font-medium text-gray-300">
-        <a class=" hover:text-highlight " href="#Hero">الرئيسية</a>
-        <a class=" hover:text-highlight " href="#Menu">من القائمة</a>
-        <a class=" hover:text-highlight " href="#">الحجوزات</a>
-        <a class=" hover:text-highlight " href="#">حكايتنا</a>
-        </nav>
-        <button class="bg-highlight  hover:bg-highlight/70 transition-colors duration-200 font-medium py-2.5 px-6 text-sm tracking-wide rounded-sm">احجز طاولتك</button>
+<body class="font-cairo bg-cards text-text-primary selection:bg-highlight selection:text-white">
+
+<header class="fixed inset-x-0 top-0 z-50 bg-cards/50 backdrop-blur-md border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <div class="text-headers font-lalezar text-4xl tracking-wide">
+      <a href="/index.html">جمر</a>
+    </div>
+
+    <nav class="hidden md:flex items-center gap-8 text-base font-medium text-gray-300">
+      <a href="#Hero" class="hover:text-highlight">الرئيسية</a>
+      <a href="#Menu" class="hover:text-highlight">من القائمة</a>
+      <a href="#" class="hover:text-highlight">الحجوزات</a>
+      <a href="#" class="hover:text-highlight">حكايتنا</a>
+    </nav>
+
+    <button class="bg-highlight hover:bg-highlight/70 transition-colors duration-200 font-medium py-2.5 px-6 text-sm tracking-wide rounded-sm">
+      احجز طاولتك
+    </button>
+  </div>
+</header>
+
+<main id="Hero" class="pt-20 min-h-screen flex items-center overflow-hidden">
+  <div class="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 px-6">
+
+    <div class="flex flex-col justify-center gap-6">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extralight leading-tight text-headers font-amiri">
+        نار حقيقية <br>
+        طعم مش هتنساه
+      </h1>
+
+      <p class="text-lg sm:text-xl lg:text-2xl text-text-secondary max-w-lg">
+        بنشوي على الفحم من أول لحظة، عشان نوصلّك طبق يليق بحبك للأكل الأصيل
+      </p>
+
+      <div>
+        <a href="#Menu" class="inline-flex items-center gap-2 border border-white/20 hover:border-highlight text-white font-medium px-8 py-3.5 rounded-sm transition group">
+          <span>اكتشف قائمة الطعام</span>
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition group-hover:-translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+          </svg>
+        </a>
       </div>
-    </header>
+    </div>
 
-    <main id="Hero" class="pt-20 min-h-screen flex items-center overflow-hidden">
-      
-      <div class="max-w-7xl w-full mx-auto grid grid-cols-1 auto-rows-min lg:grid-cols-2 gap-8 lg:gap-12 px-6  ">
-        
-        <div class="flex flex-col justify-between space-y-6 size-full">
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extralight leading-tight text-headers font-amiri">نار حقيقية <br> طعم مش هتنساه</h1>
-          <p class="text-lg sm:text-xl lg:text-2xl text-text-secondary max-w-lg">بنشوي على الفحم من أول لحظة، عشان نوصلّك طبق يليق بحبك للأكل الأصيل</p>
-          <div class="">
-                    <a href="#Menu" class=" inline-flex items-center gap-2 border border-white/20 hover:border-[#C85A32] text-white font-medium px-8 py-3.5 rounded-sm transition group">
-                        <span>اكتشف قائمة الطعام</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform group-hover:-translate-x-1 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                        </svg>
-                    </a>
-        </div>
-        
-        </div>
+    <div class="h-80 lg:h-[550px] rounded-sm overflow-hidden bg-cards/50 border border-white/30 shadow-2xl shadow-headers/10">
+      <img src="/hero.jpg" alt="مشاوي على الفحم" class="w-full h-full object-cover grayscale-90">
+    </div>
 
-        <div class="h-full  w-full rounded-sm overflow-hidden bg-cards/50 border border-white/30 shadow-2xl shadow-headers/10 ">
-          <img src="/hero.jpg" class="w-full h-80 lg:h-137.5 object-cover grayscale-90 " alt=""></div>
-      </div>
+  </div>
+</main>
 
-    </main>
+<section id="Menu" class="py-40 min-h-screen flex flex-col items-center">
+  <h2 class="text-4xl text-center font-lalezar mb-16 text-headers">
+    من القائمة
+  </h2>
 
-    <section id="Menu" class="py-40 min-h-screen flex flex-col items center">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto px-6 gap-12">
 
-      <h2 class="text-4xl text-center font-lalezar mb-16 text-headers">من القائمة</h2>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto px-6 gap-12">
-        
-        <div class="bg-body rounded-xl shadow shadow-headers/30 overflow-hidden group border-body border hover:border-highlight transition duration-300">
-          <div class="h-48  ">
-            <img class="w-full h-full object-cover rounded-t-xl group-hover:scale-110 transition duration-300" src="/card1.jpg" alt="">
-          </div>
-          <div class="p-6 space-y-6">
-            <div class="flex justify-between items-baseline">
-                <h3 class="text-lg font-bold text-white">مشاوي مشكلة</h3>
-                <span class="text-[#D4AF37] font-medium text-sm">٣٨٥  ج.م</span>
-            </div>
-            <p>تشكيلة من الكفتة، الشيش طاووق، والريش على الفحم </p>
-          </div>
-        </div>
-
-        <div class="bg-body rounded-xl shadow shadow-headers/30 overflow-hidden group border-body border hover:border-highlight transition duration-300">
-          <div class="h-48 overflow-hidden ">
-            <img class="w-full h-full object-cover rounded-t-xl group-hover:scale-110 transition duration-300" src="/card2.jpg" alt="">
-          </div>
-          <div class="p-6 space-y-6">
-            <div class="flex justify-between items-baseline">
-                <h3 class="text-lg font-bold text-white">كباب حلة</h3>
-                <span class="text-[#D4AF37] font-medium text-sm">٣٢٠ ج.م</span>
-            </div>
-            <p> كباب لحم غنم طازج متبل بالبهارات الشرقية</p>
-          </div>
-        </div>
-
-        <div class="bg-body rounded-xl shadow shadow-headers/30 overflow-hidden group border-body border hover:border-highlight transition duration-300">
-          <div class="h-48 overflow-hidden ">
-            <img class="w-full h-full object-cover rounded-t-xl group-hover:scale-110 transition duration-300" src="/card3.jpg" alt="">
-          </div>
-          <div class="p-6 space-y-6">
-            <div class="flex justify-between items-baseline">
-                <h3 class="text-lg font-bold text-white">شيش طاووق</h3>
-                <span class="text-[#D4AF37] font-medium text-sm">٢٦٠ ج.م</span>
-            </div>
-            <p>قطع دجاج متبلة ومشوية مع صوص الثوم</p>
-          </div>
-        </div>
-
-        
-
+    <div class="bg-body rounded-xl shadow shadow-headers/30 overflow-hidden group border border-body hover:border-highlight transition duration-300">
+      <div class="h-48 overflow-hidden">
+        <img src="/card1.jpg" alt="مشاوي مشكلة" loading="lazy" class="w-full h-full object-cover rounded-t-xl group-hover:scale-110 transition duration-300">
       </div>
 
-    </section>
+      <div class="p-6 space-y-6">
+        <div class="flex justify-between items-baseline">
+          <h3 class="text-lg font-bold text-white">مشاوي مشكلة</h3>
+          <span class="text-[#D4AF37] font-medium text-sm">٣٨٥ ج.م</span>
+        </div>
 
-    <script type="module" src="/src/main.js"></script>
-  </body>
+        <p>تشكيلة من الكفتة، الشيش طاووق، والريش على الفحم</p>
+      </div>
+    </div>
+
+    <div class="bg-body rounded-xl shadow shadow-headers/30 overflow-hidden group border border-body hover:border-highlight transition duration-300">
+      <div class="h-48 overflow-hidden">
+        <img src="/card2.jpg" alt="كباب حلة" loading="lazy" class="w-full h-full object-cover rounded-t-xl group-hover:scale-110 transition duration-300">
+      </div>
+
+      <div class="p-6 space-y-6">
+        <div class="flex justify-between items-baseline">
+          <h3 class="text-lg font-bold text-white">كباب حلة</h3>
+          <span class="text-[#D4AF37] font-medium text-sm">٣٢٠ ج.م</span>
+        </div>
+
+        <p>كباب لحم غنم طازج متبل بالبهارات الشرقية</p>
+      </div>
+    </div>
+
+    <div class="bg-body rounded-xl shadow shadow-headers/30 overflow-hidden group border border-body hover:border-highlight transition duration-300">
+      <div class="h-48 overflow-hidden">
+        <img src="/card3.jpg" alt="شيش طاووق" loading="lazy" class="w-full h-full object-cover rounded-t-xl group-hover:scale-110 transition duration-300">
+      </div>
+
+      <div class="p-6 space-y-6">
+        <div class="flex justify-between items-baseline">
+          <h3 class="text-lg font-bold text-white">شيش طاووق</h3>
+          <span class="text-[#D4AF37] font-medium text-sm">٢٦٠ ج.م</span>
+        </div>
+
+        <p>قطع دجاج متبلة ومشوية مع صوص الثوم</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script type="module" src="/src/main.js"></script>
+
+</body>
 </html>
